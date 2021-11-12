@@ -20,24 +20,7 @@ function EmotionPicker(props) {
 
     const toggleEmotion = (emotionNum,setEmotionNum) => {
         emotionNum === 3 ? setEmotionNum(0) : setEmotionNum(emotionNum+1)
-        //setEmotionNum(getEmotionAdj(emotionNum))
     }
-    const getEmotionAdj = (num) => {
-        if(num===0){
-            return 1
-        }
-        if(num===1){
-            return 3
-        }
-        if(num===3){
-            return 2
-        }
-        if(num===2){
-            return 0
-        }
-       
-    }
-    //const [] = useState()
     const emotion = emotionMatrix[expectation][threat][judgment][contentment]
     const getEmotion = (expectation, threat, judgment, contentment) =>{
         const emotion = emotionMatrix[expectation][threat][judgment][contentment]
@@ -47,7 +30,6 @@ function EmotionPicker(props) {
     const icon = emotion.icon === "unknown"?"?":emotion.icon
     const output = <div>
         <h2>{icon} {emotion.name}</h2>
-        {/* <p>{emotion.definition}</p> */}
     </div>
     const getAdjacentNumArr = (num) => {
         const test = [0,1,2,3]
@@ -69,26 +51,26 @@ function EmotionPicker(props) {
         // }
         // return []
     }
-    const getComponents = (num) =>{
-        //Not sure if this is getting everthing
-        if (num === 3){
-            return [0,1,2]
-        }
-        if(num === 2){
-            return [0]
-        }
-        if(num === 1){
-            return [0]
-        }
-        if(num === 0){
-            return []
-        }
-    }
-    const getElements = () => {
-        let testArray = []
+    // const getComponents = (num) =>{
+    //     //Not sure if this is getting everthing
+    //     if (num === 3){
+    //         return [0,1,2]
+    //     }
+    //     if(num === 2){
+    //         return [0]
+    //     }
+    //     if(num === 1){
+    //         return [0]
+    //     }
+    //     if(num === 0){
+    //         return []
+    //     }
+    // }
+    // const getElements = () => {
+    //     let testArray = []
         
 
-    }
+    // }
     
     return (
         <div>
@@ -106,6 +88,7 @@ function EmotionPicker(props) {
                 </div>
                 <div className={"buttonCol"}>
                     <button
+                            className={"emotionButton"}
                             onClick = {
                                 ()=>{toggleEmotion(threat,setThreat)}
                                 }
@@ -115,6 +98,7 @@ function EmotionPicker(props) {
                 </div>
                 <div className={"buttonCol"}>
                     <button
+                            className={"emotionButton"}
                             onClick = {
                                 ()=>{toggleEmotion(judgment,setJudgement)}
                                 }
@@ -124,6 +108,7 @@ function EmotionPicker(props) {
                 </div>
                 <div className={"buttonCol"}>
                     <button
+                            className={"emotionButton"}
                             onClick = {
                                 ()=>{toggleEmotion(contentment,setContentment)}
                                 }

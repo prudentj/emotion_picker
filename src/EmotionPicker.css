@@ -8,6 +8,9 @@
 }
 .emotionButton{
     /* min-width: 122px; */
+    border:grey solid .5px;
+    background:black;
+    color:white;
     margin-left: 8px;
     margin-right: 8px;
 }
