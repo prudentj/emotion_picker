@@ -162,7 +162,6 @@ function EmotionPicker(props) {
                     })}
                 </div>
             </div>
-            <h2>Base Emotions</h2>
             {/* <h2 className={"adjacies"}>Composites of {icon} {emotion.name}</h2> */}
             {/* Singles */}
             {/* If somethings is made of multiple components it will list all the components */}
