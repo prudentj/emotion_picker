@@ -209,7 +209,7 @@ const emotionArray =
                 //Null
                 
                     {
-                        name:'Righteous Indignation / Dominance',//Rightous Anger
+                        name:'Dominance',//Rightous AngerRighteous Indignation / 
                         definition:"unknown",
                         icon:"😤"//angry angel
                     },
@@ -1510,7 +1510,7 @@ const emotionArray =
                     },
                 //Joy
                     {
-                        name:'Manic',
+                        name:'Funny/ Humor',//Manic
                         definition:"unknown",
                         icon:"😁"
                     },
@@ -1522,7 +1522,7 @@ const emotionArray =
                     },
                 //Bittersweet
                {
-                    name:'Bittersweet Confusion',//Bipolar
+                    name:'Sad Jokes',//BipolarBittersweet Confusion
                     definition:"unknown",
                     icon:"😁/😢" //?
                 }
@@ -1539,7 +1539,7 @@ const emotionArray =
                     },
                 //Joy
                     {
-                        name:'Morbid Curiosity', //?
+                        name:'Morbid Curiosity/ Dirty Jokes', //?
                         definition:"unknown",
                         icon:"😈" //demon with a monocule
                     },
